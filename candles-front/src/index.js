@@ -1,0 +1,17 @@
+// == Package imports
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// == Local imports
+// styles
+import './styles/reset.css';
+import './styles/index.css';
+// components
+import App from './components/App/index';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
