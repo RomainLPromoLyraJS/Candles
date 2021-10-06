@@ -1,17 +1,22 @@
 // == Package imports
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 // == Local imports
 // styles
 import './styles/reset.css';
 import './styles/index.css';
 // components
-import App from './components/App/index';
+import App from './components/App';
 
-ReactDOM.render(
-  <React.StrictMode>
+
+const rootReactElement = (
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </BrowserRouter>
 );
+
+const target = document.getElementById('root');
+
+render(rootReactElement, target);

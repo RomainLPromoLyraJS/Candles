@@ -1,11 +1,19 @@
+// == Package imports
+import React from 'react';
+// import { Route } from 'react-router-dom';
 
+// == Local imports
+// Components
+import Header from '../Header';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <p>je suis dans App.</p>
+      <Header />
     </div>
   );
+
+
 }
 
 export default App;
