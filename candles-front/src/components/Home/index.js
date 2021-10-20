@@ -7,8 +7,25 @@ const Home = () => {
       <div className="home__img">
         <img className="home__img__picture" src={CandleImg} alt="bougie" />
       </div>
-      <div className="home__collection">je suis la collection de bougies.
-      </div>
+      <div className="home__collection">
+        <div className="home__collection__candles">
+          <h2 className="home__collection__candles__title">Ma collection de bougies</h2>
+        </div>
+        <div className="home__collection__sections">
+          <div className="home__collection__sections__section">
+            <img className="home__collection__sections__section__img" src={CandleImg} alt="bougie" />
+            <h2 className="home__collection__sections__section__title">Bougie 1</h2>
+          </div>
+          <div className="home__collection__sections__section">
+            <img className="home__collection__sections__section__img" src={CandleImg} alt="bougie" />
+            <h2 className="home__collection__sections__section__title">Bougie 2</h2>
+          </div>
+          <div className="home__collection__sections__section">
+            <img className="home__collection__sections__section__img" src={CandleImg} alt="bougie" />
+            <h2 className="home__collection__sections__section__title">Bougie 3</h2>
+          </div>
+          </div>
+        </div>
       <div className="home__story">
         <h2 className="home__story__title">Mon Histoire</h2>
         <p className="home__story__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed quidem culpa. Consectetur consequuntur, iure porro sunt ducimus voluptatum, doloribus perspiciatis rem illo asperiores recusandae. Aperiam sequi magnam accusamus sapiente!

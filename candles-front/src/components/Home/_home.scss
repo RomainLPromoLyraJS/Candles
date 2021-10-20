@@ -13,7 +13,67 @@
 
     &__picture {
       width: 100%;
+      height: 500px;
       object-fit: cover;
+    }
+  }
+
+  &__collection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    &__candles {
+      display: flex;
+      justify-content: center;
+      &__title {
+        border-bottom: rosybrown 1px solid;
+        max-width: 100%;
+        padding-bottom: 1em;
+        margin: 2em 0;
+        font-size: 2em;
+      }
+    }
+    &__sections {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      margin: 0 auto;
+      &__section {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        &__img {
+          width: 100%;
+          margin-bottom: 1em;
+        }
+
+        &__title {
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  &__story {
+    background-color: rosybrown;
+    padding: 1em 0 3em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+      border-bottom: 1px solid black;
+      max-width: 100%;
+      padding-bottom: 1em;
+      margin: 2em 0;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 0 2em;
     }
   }
 }
